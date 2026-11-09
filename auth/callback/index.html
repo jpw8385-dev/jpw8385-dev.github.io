@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tesla authorization</title>
+</head>
+<body>
+  <p>Authorization received. You can close this page.</p>
+  <pre id="info"></pre>
+  <script>
+    document.getElementById("info").textContent = window.location.search || window.location.hash || "";
+  </script>
+</body>
+</html>
